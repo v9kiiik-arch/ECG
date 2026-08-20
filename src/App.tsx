@@ -5,6 +5,7 @@ import BeforeAfter from '@/components/BeforeAfter';
 import AlumniProof from '@/components/AlumniProof';
 import Outcomes from '@/components/Outcomes';
 import AboutViveck from '@/components/AboutViveck';
+import Gallery from '@/components/Gallery';
 import FAQ from '@/components/FAQ';
 import Guarantee from '@/components/Guarantee';
 import FinalCTA from '@/components/FinalCTA';
@@ -21,6 +22,7 @@ export default function App() {
         <AlumniProof />
         <Outcomes />
         <AboutViveck />
+        <Gallery />
         <FAQ />
         <Guarantee />
         <FinalCTA />
