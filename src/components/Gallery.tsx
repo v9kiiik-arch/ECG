@@ -77,8 +77,7 @@ export default function Gallery() {
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-esg-dark-bg/90 via-transparent to-transparent opacity-60 transition-opacity group-hover:opacity-80" />
-              <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between p-4">
-                <p className="text-[12px] font-semibold text-white">{img.caption}</p>
+              <div className="absolute bottom-0 right-0 p-4">
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-esg-green/80 opacity-0 transition-all group-hover:opacity-100">
                   <ZoomIn className="h-4 w-4 text-white" />
                 </span>
@@ -142,3 +141,6 @@ export default function Gallery() {
     </section>
   );
 }
+
+
+export default Gallery
