@@ -1,4 +1,4 @@
-export const RAZORPAY_BASE = 'https://pages.razorpay.com/CCMP26';
+export const RAZORPAY_BASE = 'https://pages.razorpay.com/1-to-1viv';
 
 export const CTA_URLS = {
   nav: `${RAZORPAY_BASE}?src=nav_cta`,

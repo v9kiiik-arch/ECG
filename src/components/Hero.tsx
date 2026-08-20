@@ -64,7 +64,7 @@ export default function Hero() {
         {/* CTA */}
         <a
           id="hero-cta"
-          href="https://rzp.io/rzp/1-to-1viv"
+          href={CTA_URLS.hero}
           className="group mt-6 flex w-full max-w-esg-cta items-center justify-center gap-2 rounded-esg-btn bg-esg-green px-6 py-[18px] text-base font-bold text-white transition-all hover:bg-esg-green-hover hover:shadow-lg hover:shadow-esg-green/20 active:scale-[0.98]"
         >
           {CTA_LABEL}
