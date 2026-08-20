@@ -10,12 +10,12 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-esg-hero text-left">
         {/* Live badge */}
-        <div className="inline-flex items-center gap-2 rounded-full border border-esg-mid/30 bg-esg-mid/10 px-3 py-1.5">
-          <span className="relative flex h-2 w-2">
+        <div className="inline-flex items-center gap-2 rounded-full border border-esg-mid bg-esg-mid/20 px-4 py-2 shadow-lg shadow-esg-mid/20 esg-pulse">
+          <span className="relative flex h-2.5 w-2.5">
             <span className="absolute inline-flex h-full w-full rounded-full bg-esg-mid opacity-75 esg-pulse" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-esg-mid" />
+            <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-esg-mid" />
           </span>
-          <span className="text-[11px] font-semibold uppercase tracking-[0.1em] text-esg-mid">
+          <span className="text-[12px] font-bold uppercase tracking-[0.12em] text-white">
             Live webinar · Sunday 8:00 PM IST
           </span>
         </div>
