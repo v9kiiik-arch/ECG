@@ -3,10 +3,10 @@ import { CTA_URLS, PRICE } from '@/content';
 
 export default function StickyMobileBar() {
   return (
-    <div className="fixed bottom-0 left-0 z-50 flex h-16 w-full items-center justify-between border-t border-esg-border bg-white px-4 shadow-[0_-2px_8px_rgba(0,0,0,0.08)] md:hidden">
+    <div className="fixed bottom-0 left-0 z-50 flex h-16 w-full items-center justify-between border-t border-white/10 bg-esg-dark-bg/95 px-4 shadow-[0_-2px_8px_rgba(0,0,0,0.3)] backdrop-blur-sm md:hidden">
       <div className="flex items-baseline gap-2">
-        <span className="text-lg font-bold text-esg-dark">{PRICE.current}</span>
-        <span className="text-[13px] text-esg-muted line-through">
+        <span className="text-lg font-bold text-white">{PRICE.current}</span>
+        <span className="text-[13px] text-white/40 line-through">
           {PRICE.original}
         </span>
       </div>

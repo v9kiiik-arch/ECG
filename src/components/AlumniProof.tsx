@@ -23,12 +23,12 @@ const ALUMNI = [
 
 export default function AlumniProof() {
   return (
-    <section className="bg-white px-5 py-16 sm:px-6 sm:py-16">
+    <section className="bg-esg-dark-bg px-5 py-16 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-esg-content">
-        <p className="text-[10px] font-semibold uppercase tracking-wider text-esg-green">
+        <p className="text-[10px] font-semibold uppercase tracking-wider text-esg-mid">
           PROFESSIONALS WHO WERE EXACTLY WHERE YOU ARE
         </p>
-        <h2 className="mt-2 text-[28px] font-bold leading-tight text-esg-dark">
+        <h2 className="mt-2 text-[28px] font-bold leading-tight text-white">
           Different backgrounds. Same result.
         </h2>
 
@@ -36,37 +36,37 @@ export default function AlumniProof() {
           {ALUMNI.map((alum, i) => (
             <div
               key={i}
-              className="group rounded-esg-card border border-esg-border border-t-[3px] border-t-esg-green bg-white p-[18px] transition-all hover:border-esg-green/30 hover:shadow-md hover:shadow-esg-green/5"
+              className="group rounded-esg-card border border-white/10 border-t-[3px] border-t-esg-green bg-white/5 p-[18px] transition-all hover:border-esg-green/30 hover:shadow-md hover:shadow-esg-green/10"
             >
-              <span className="inline-block rounded-full bg-esg-stripe px-2.5 py-1 text-[9px] font-semibold uppercase tracking-wider text-esg-muted">
+              <span className="inline-block rounded-full bg-white/10 px-2.5 py-1 text-[9px] font-semibold uppercase tracking-wider text-white/45">
                 Before
               </span>
-              <p className="mt-3 text-[13px] leading-[1.6] text-esg-mid-text">
+              <p className="mt-3 text-[13px] leading-[1.6] text-white/72">
                 {alum.before}
               </p>
 
               <div className="my-3 flex justify-center">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-esg-light">
-                  <ArrowDown className="h-4 w-4 text-esg-green esg-bounce" strokeWidth={2.5} />
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-esg-green/20">
+                  <ArrowDown className="h-4 w-4 text-esg-mid esg-bounce" strokeWidth={2.5} />
                 </span>
               </div>
 
-              <span className="text-[9px] font-bold uppercase tracking-wider text-esg-green">
+              <span className="text-[9px] font-bold uppercase tracking-wider text-esg-mid">
                 After
               </span>
-              <p className="mt-2 text-[13px] font-bold leading-[1.5] text-esg-dark">
+              <p className="mt-2 text-[13px] font-bold leading-[1.5] text-white">
                 {alum.after}
               </p>
 
-              <div className="my-4 border-t border-esg-border" />
+              <div className="my-4 border-t border-white/10" />
 
               <div className="flex items-center gap-2.5">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-esg-light text-[11px] font-bold text-esg-green">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-esg-green/20 text-[11px] font-bold text-esg-mid">
                   {alum.name.charAt(0)}
                 </span>
                 <div>
-                  <p className="text-[13px] font-bold leading-tight text-esg-dark">{alum.name}</p>
-                  <p className="mt-0.5 text-[11px] leading-tight text-esg-muted">{alum.role}</p>
+                  <p className="text-[13px] font-bold leading-tight text-white">{alum.name}</p>
+                  <p className="mt-0.5 text-[11px] leading-tight text-white/45">{alum.role}</p>
                 </div>
               </div>
             </div>

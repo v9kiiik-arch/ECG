@@ -28,31 +28,31 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-esg-stripe px-5 py-16 sm:px-6 sm:py-16">
+    <section className="bg-esg-dark-bg px-5 py-16 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-esg-content">
-        <p className="text-[10px] font-semibold uppercase tracking-wider text-esg-green">
+        <p className="text-[10px] font-semibold uppercase tracking-wider text-esg-mid">
           COMMON QUESTIONS
         </p>
-        <h2 className="mt-2 text-[28px] font-bold leading-tight text-esg-dark">
+        <h2 className="mt-2 text-[28px] font-bold leading-tight text-white">
           Answered honestly.
         </h2>
 
-        <div className="mt-8 divide-y divide-esg-border overflow-hidden rounded-esg-card border border-esg-border bg-white">
+        <div className="mt-8 divide-y divide-white/10 overflow-hidden rounded-esg-card border border-white/10 bg-white/5">
           {FAQS.map((faq, i) => {
             const isOpen = openIndex === i;
             return (
-              <div key={i} className={`transition-colors ${isOpen ? 'bg-esg-light' : ''}`}>
+              <div key={i} className={`transition-colors ${isOpen ? 'bg-white/[0.08]' : ''}`}>
                 <button
                   type="button"
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-4 px-[18px] py-4 text-left"
                 >
-                  <span className="text-sm font-bold text-esg-dark">{faq.q}</span>
+                  <span className="text-sm font-bold text-white">{faq.q}</span>
                   {isOpen ? (
-                    <Minus className="h-5 w-5 shrink-0 text-esg-green" strokeWidth={2.5} />
+                    <Minus className="h-5 w-5 shrink-0 text-esg-mid" strokeWidth={2.5} />
                   ) : (
-                    <Plus className="h-5 w-5 shrink-0 text-esg-green" strokeWidth={2.5} />
+                    <Plus className="h-5 w-5 shrink-0 text-esg-mid" strokeWidth={2.5} />
                   )}
                 </button>
                 <div
@@ -62,7 +62,7 @@ export default function FAQ() {
                   }}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-[18px] pb-4 text-[13px] leading-[1.7] text-esg-mid-text">
+                    <p className="px-[18px] pb-4 text-[13px] leading-[1.7] text-white/72">
                       {faq.a}
                     </p>
                   </div>

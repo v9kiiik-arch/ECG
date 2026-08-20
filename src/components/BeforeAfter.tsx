@@ -27,19 +27,19 @@ const ROWS = [
 
 export default function BeforeAfter() {
   return (
-    <section className="bg-esg-stripe px-5 py-16 sm:px-6 sm:py-16">
+    <section className="bg-esg-dark-bg px-5 py-16 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-esg-content">
-        <p className="text-[10px] font-semibold uppercase tracking-wider text-esg-green">
+        <p className="text-[10px] font-semibold uppercase tracking-wider text-esg-mid">
           WHAT CHANGES IN 90 MINUTES
         </p>
-        <h2 className="mt-2 text-[28px] font-bold leading-tight text-esg-dark">
+        <h2 className="mt-2 text-[28px] font-bold leading-tight text-white">
           You walk in confused. You walk out with a plan.
         </h2>
 
         {/* Desktop table */}
-        <div className="mt-8 hidden overflow-hidden border border-esg-border sm:block">
+        <div className="mt-8 hidden overflow-hidden border border-white/10 sm:block">
           <div className="grid grid-cols-2">
-            <div className="bg-esg-before-head px-[18px] py-3.5 text-[11px] font-bold uppercase tracking-wider text-esg-muted">
+            <div className="bg-white/5 px-[18px] py-3.5 text-[11px] font-bold uppercase tracking-wider text-white/45">
               Where you are right now
             </div>
             <div className="border-l-[3px] border-esg-green bg-esg-green px-[18px] py-3.5 text-[11px] font-bold uppercase tracking-wider text-white">
@@ -49,19 +49,19 @@ export default function BeforeAfter() {
           {ROWS.map((row, i) => (
             <div
               key={i}
-              className="grid grid-cols-2 border-t border-esg-border"
+              className="grid grid-cols-2 border-t border-white/10"
             >
               <div
                 className={`px-[18px] py-3.5 text-[13px] leading-[1.6] ${
-                  i % 2 === 0 ? 'bg-white' : 'bg-esg-stripe'
-                } text-esg-mid-text`}
+                  i % 2 === 0 ? 'bg-white/[0.02]' : 'bg-white/[0.04]'
+                } text-white/72`}
               >
                 {row.before}
               </div>
               <div
                 className={`border-l-[3px] border-esg-green px-[18px] py-3.5 text-[13px] leading-[1.6] ${
-                  i % 2 === 0 ? 'bg-esg-light' : 'bg-esg-after-even'
-                } text-esg-dark`}
+                  i % 2 === 0 ? 'bg-esg-green/10' : 'bg-esg-green/[0.15]'
+                } text-white`}
               >
                 {row.after}
               </div>
@@ -73,16 +73,16 @@ export default function BeforeAfter() {
         <div className="mt-8 space-y-4 sm:hidden">
           {ROWS.map((row, i) => (
             <div key={i}>
-              <div className="bg-esg-before-head px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-esg-muted">
+              <div className="bg-white/5 px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-white/45">
                 Before
               </div>
-              <div className="border border-b-0 border-esg-border bg-white px-4 py-3.5 text-[13px] leading-[1.6] text-esg-mid-text">
+              <div className="border border-b-0 border-white/10 bg-white/[0.02] px-4 py-3.5 text-[13px] leading-[1.6] text-white/72">
                 {row.before}
               </div>
               <div className="border-l-[3px] border-esg-green bg-esg-green px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-white">
                 After
               </div>
-              <div className="border border-t-0 border-esg-border bg-esg-light px-4 py-3.5 text-[13px] leading-[1.6] text-esg-dark">
+              <div className="border border-t-0 border-white/10 bg-esg-green/10 px-4 py-3.5 text-[13px] leading-[1.6] text-white">
                 {row.after}
               </div>
             </div>

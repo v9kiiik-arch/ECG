@@ -23,12 +23,12 @@ const OUTCOMES = [
 
 export default function Outcomes() {
   return (
-    <section className="bg-esg-stripe px-5 py-16 sm:px-6 sm:py-16">
+    <section className="bg-esg-dark-bg px-5 py-16 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-esg-content">
-        <p className="text-[10px] font-semibold uppercase tracking-wider text-esg-green">
+        <p className="text-[10px] font-semibold uppercase tracking-wider text-esg-mid">
           YOUR 90 MINUTES, ACCOUNTED FOR
         </p>
-        <h2 className="mt-2 text-[28px] font-bold leading-tight text-esg-dark">
+        <h2 className="mt-2 text-[28px] font-bold leading-tight text-white">
           Not a lecture. A decision-making session.
         </h2>
 
@@ -36,15 +36,15 @@ export default function Outcomes() {
           {OUTCOMES.map((item, i) => (
             <div
               key={i}
-              className="group rounded-esg-card border border-esg-border border-t-[3px] border-t-esg-green bg-white p-5 transition-all hover:shadow-md hover:shadow-esg-green/5"
+              className="group rounded-esg-card border border-white/10 border-t-[3px] border-t-esg-green bg-white/5 p-5 transition-all hover:shadow-md hover:shadow-esg-green/10"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-esg-light text-2xl">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-esg-green/15 text-2xl">
                 {item.icon}
               </div>
-              <h3 className="mt-4 text-[15px] font-bold leading-tight text-esg-dark">
+              <h3 className="mt-4 text-[15px] font-bold leading-tight text-white">
                 {item.title}
               </h3>
-              <p className="mt-2 text-[13px] leading-[1.7] text-esg-mid-text">
+              <p className="mt-2 text-[13px] leading-[1.7] text-white/72">
                 {item.body}
               </p>
             </div>

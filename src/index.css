@@ -10,13 +10,13 @@
   }
   body {
     font-family: 'Inter', system-ui, sans-serif;
-    background-color: #f4f4f2;
-    color: #4a4a4a;
+    background-color: #1A2E26;
+    color: rgba(255, 255, 255, 0.72);
     font-size: 14px;
     line-height: 1.6;
   }
   *:focus-visible {
-    outline: 2px solid #0f6e56;
+    outline: 2px solid #1D9E75;
     outline-offset: 2px;
     border-radius: 2px;
   }
