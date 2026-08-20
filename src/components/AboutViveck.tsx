@@ -67,6 +67,15 @@ export default function AboutViveck() {
               conglomerate and a USD 1-billion PPP infrastructure pipeline.
             </p>
 
+            {/* Book */}
+            <div className="mt-6 overflow-hidden rounded-xl border border-white/10">
+              <img
+                src="/images/common-questions/dfc91c4f-1119-41c8-9511-d2c8d777d391.JPG"
+                alt="From Underdog to Unicorn — Bestselling book by Viveck J Suman"
+                className="w-full object-cover"
+              />
+            </div>
+
             <p className="mt-6 text-[10px] font-semibold uppercase tracking-wider text-esg-mid">
               CCMP alumni work at
             </p>
